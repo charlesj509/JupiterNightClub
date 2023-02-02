@@ -1,0 +1,10 @@
+<!-- templates/gallery.html -->
+{% extends 'layout.html' %}
+{% block content %}
+    <h1>Gallery</h1>
+    <div class="gallery">
+        <img src="{{ url_for('static', filename='image1.jpg') }}" alt="image1">
+        <img src="{{ url_for('static', filename='image2.jpg') }}" alt="image2">
+        <img src="{{ url_for('static', filename='image3.jpg') }}" alt="image3">
+    </div>
+{% endblock %}
